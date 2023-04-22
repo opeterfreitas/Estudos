@@ -1,5 +1,6 @@
 package com.opeterfreitas.gof;
 
+import com.opeterfreitas.gof.facade.Facade;
 import com.opeterfreitas.gof.singleton.SingletonEager;
 import com.opeterfreitas.gof.singleton.SingletonLazy;
 import com.opeterfreitas.gof.singleton.SingletonLazyHolder;
@@ -41,6 +42,11 @@ public class Test {
         robo.mover();
         robo.mover();
         robo.mover();
+
+        // Facade:
+
+        Facade facade = new Facade();
+        facade.migrarCliente("Peter", "38414042");
 
     }
 }
